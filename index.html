@@ -5,11 +5,72 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/images/favicon-32x32.png" type="image/x-icon">
     <title>News Homepage</title>
 </head>
 
 <body>
+    <nav class="nav">
+        <div class="logo">
+            <a href="./index.html">
+                <img src="./assets/images/logo.svg" alt="Logo del sitio web, una letra W seguida de un punto.">
+            </a>
+        </div>
+        <div class="nav__list">
+            <div>
+                <button class="open-btn" type="button"><img src="./assets/images/icon-menu.svg"
+                        alt="Botón para desplegar el menú"></button>
+                <button class="close-btn" type="button"><img style="display: none;"
+                        src="./assets/images/icon-menu-close.svg" alt="Botón para cerrar el menú"></button>
+            </div>
+            <ul style="display: none;">
+                <li>Home</li>
+                <li>New</li>
+                <li>Popular</li>
+                <li>Trending</li>
+                <li>Categories</li>
+            </ul>
+        </div>
+    </nav>
+    <main class="main">
+        <header>
+            <div class="img-box">
+                <img src="./assets/images/image-web-3-mobile.jpg" alt="Muchas formas geométricas de colores">
+            </div>
+            <h1>The Bright Future of Web 3.0?</h1>
+            <p>
+                We dive into the next evolution of the web that claims to put the power of the platforms back into the
+                hands of the people. But is it really fulfilling its promise?
+            </p>
+            <button class="btn">READ MORE</button>
+        </header>
+        <section class="news bg-darkBlue">
+            <h2>New</h2>
+            <section>
+                <h3>Hydrogen VS Electric Cars</h3>
+                <p class="text-silver">
+                    Will hydrogen-fueled cars ever catch up to EVs?
+                </p>
+            </section>
+            <span class="bar"></span>
+            <section>
+                <h3>The Downsides of AI Artistry</h3>
+                <p class="text-silver">
+                    What are the possible adverse effects of on-demand AI image generation?
+                </p>
+            </section>
+            <span class="bar"></span>
+            <section>
+                <h3>Is VC Funding Drying Up?</h3>
+                <p class="text-silver">
+                    Private funding by VC firms is down 50% YOY. We take a look at what that means.
+                </p>
+            </section>
+        </section>
+    </main>
 
+    <script src="main.js"></script>
 </body>
 
 </html>

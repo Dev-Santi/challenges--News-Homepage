@@ -1,0 +1,168 @@
+/* Imports */
+@font-face {
+    font-family: myFont;
+    src: url(./assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+/* Resets and variables*/
+* {
+    margin: 0;
+    padding: 0;
+    margin-block: 0;
+    margin-inline: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* palette */
+    --almost-white: #FFFDFA;
+    --dark-blue: #00001A;
+    --gunMetal: #5E607A;
+    --light-vermillion: #F15D51;
+    --silver: #C5C6CE;
+    --yellow: #E9AA52;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: myFont;
+}
+
+button {
+    border: none;
+    background-color: inherit;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+/* ---------------------
+Start
+----------------------*/
+
+/* generic styles */
+
+body {
+    padding: 2.8rem 1.6rem 8rem 1.6rem;
+}
+
+h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+    font-weight: 800;
+    color: var(--dark-blue);
+}
+
+h2 {
+    font-size: 3.2rem;
+    line-height: 3.2rem;
+    font-weight: 700;
+    color: var(--yellow);
+}
+
+h3 {
+    font-size: 2rem;
+    line-height: 2.4rem;
+    font-weight: 800;
+    color: var(--almost-white);
+}
+
+p {
+    font-size: 1.5rem;
+    line-height: 2.6rem;
+    font-weight: 400;
+    color: var(--gunMetal);
+}
+
+img {
+    width: 100%;
+}
+
+/* style classes */
+
+/* bar */
+.bar {
+    display: block;
+    height: 1px;
+    margin: 3rem 0;
+    background-color: var(--gunMetal);
+}
+
+/* backgrounds */
+.bg-darkBlue {
+    background-color: var(--dark-blue);
+}
+
+/* text */
+.text-silver {
+    color: var(--silver);
+}
+
+/* buttons */
+.btn {
+    padding: 1.2rem 3.3rem;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    font-weight: 700;
+    letter-spacing: 0.438rem;
+    color: var(--almost-white);
+    background-color: var(--light-vermillion);
+}
+
+/* Specific styles */
+
+/* Navbar */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3.2rem;
+}
+
+.nav .logo {
+    width: 4.5rem;
+    height: 2.8rem;
+}
+
+.nav .nav__list img{
+    width: 4rem;
+    height: 1.7rem;
+}
+
+/* Header */
+header {
+    margin-bottom: 6.4rem;
+}
+
+header .img-box {
+    margin-bottom: 2.4rem;
+}
+
+header h1 {
+    margin-bottom: 1.6rem;
+}
+
+header p {
+    margin-bottom: 2.4rem;
+}
+
+/* News */
+.news {
+    padding: 2.4rem 2rem;
+}
+
+.news h2 {
+    margin-bottom: 3.5rem;
+}
+
+.news h3 {
+    margin-bottom: 0.8rem;
+}
+
+
