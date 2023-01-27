@@ -49,7 +49,8 @@ Start
 /* generic styles */
 
 body {
-    padding: 2.8rem 1.6rem 8rem 1.6rem;
+    padding: 2.8rem 1.6rem 8rem;
+    margin: 0 auto;
 }
 
 h1 {
@@ -73,11 +74,23 @@ h3 {
     color: var(--almost-white);
 }
 
+h4 {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    font-weight: 800;
+    color: var(--dark-blue);
+}
+
+h5 {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    font-weight: 800;
+}
+
 p {
     font-size: 1.5rem;
     line-height: 2.6rem;
     font-weight: 400;
-    color: var(--gunMetal);
 }
 
 img {
@@ -89,12 +102,16 @@ img {
 /* bar */
 .bar {
     display: block;
-    height: 1px;
+    height: 0.1rem;
     margin: 3rem 0;
     background-color: var(--gunMetal);
 }
 
 /* backgrounds */
+.bg-gunMetal {
+    background-color: var(--gunMetal);
+}
+
 .bg-darkBlue {
     background-color: var(--dark-blue);
 }
@@ -102,6 +119,10 @@ img {
 /* text */
 .text-silver {
     color: var(--silver);
+}
+
+.text-gunMetal {
+    color: var(--gunMetal);
 }
 
 /* buttons */
@@ -113,6 +134,7 @@ img {
     letter-spacing: 0.438rem;
     color: var(--almost-white);
     background-color: var(--light-vermillion);
+    cursor: pointer;
 }
 
 /* Specific styles */
@@ -155,6 +177,7 @@ header p {
 /* News */
 .news {
     padding: 2.4rem 2rem;
+    margin-bottom: 6.4rem;
 }
 
 .news h2 {
@@ -165,4 +188,62 @@ header p {
     margin-bottom: 0.8rem;
 }
 
+/* Articles */
+.articles {
+    display: flex;
+    flex-direction: column;
+    gap: 3.3rem;
+}
 
+.articles section {
+    display: flex;
+    gap: 2.4rem;
+    max-width: 35rem;
+}
+
+.articles section picture img{
+    width: 10rem;
+}
+
+.articles section div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.articles section div span {
+    display: block;
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 3.2rem;
+}
+
+/* ---------------
+Medias
+----------------*/
+
+@media(min-width: 35rem) {
+    body {
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+}
+
+@media(min-width: 48rem) {
+    .main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1rem;
+    }
+
+    .news {
+        height: fit-content;
+    }
+
+    .articles {
+        grid-column: 1 / 3;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
