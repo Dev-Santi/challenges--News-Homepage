@@ -11,6 +11,14 @@
 </head>
 
 <body>
+    <div id="opacity-box" class="opacity"></div>
+    <ul id="menu" class="">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">New</a></li>
+        <li><a href="#">Popular</a></li>
+        <li><a href="#">Trending</a></li>
+        <li><a href="#">Categories</a></li>
+    </ul>
     <nav class="nav">
         <div class="logo">
             <a href="./index.html">
@@ -19,18 +27,11 @@
         </div>
         <div class="nav__list">
             <div>
-                <button class="open-btn" type="button"><img src="./assets/images/icon-menu.svg"
-                        alt="Botón para desplegar el menú"></button>
-                <button class="close-btn" type="button"><img style="display: none;"
+                <button id="open-btn" class="on" type="button"><a href="#"><img src="./assets/images/icon-menu.svg"
+                    alt="Botón para desplegar el menú"></a></button>
+                <button id="close-btn" class="off" type="button"><img
                         src="./assets/images/icon-menu-close.svg" alt="Botón para cerrar el menú"></button>
             </div>
-            <ul style="display: none;">
-                <li>Home</li>
-                <li>New</li>
-                <li>Popular</li>
-                <li>Trending</li>
-                <li>Categories</li>
-            </ul>
         </div>
     </nav>
     <main class="main">

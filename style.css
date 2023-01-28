@@ -72,6 +72,12 @@ h3 {
     line-height: 2.4rem;
     font-weight: 800;
     color: var(--almost-white);
+    transition: 0.3s;
+}
+
+h3:hover {
+    color: var(--yellow);
+    transform: scale(1.05);
 }
 
 h4 {
@@ -91,6 +97,14 @@ p {
     font-size: 1.5rem;
     line-height: 2.6rem;
     font-weight: 400;
+}
+
+a {
+    transition: 0.3s;
+}
+
+a:hover {
+    color: var(--yellow);
 }
 
 img {
@@ -135,6 +149,11 @@ img {
     color: var(--almost-white);
     background-color: var(--light-vermillion);
     cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: var(--yellow);
 }
 
 /* Specific styles */
@@ -147,14 +166,70 @@ img {
     margin-bottom: 3.2rem;
 }
 
+div.opacity {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+div.opacity.on {
+    background-color: rgba(0, 0, 26, 0.5);
+}
+
+body.off {
+    height: 100vh;
+    overflow: hidden;
+}
+
+ul {
+    display: none;
+    padding: 14.4rem 2.4rem;
+    flex-direction: column;
+    row-gap: 2.4rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 68%;
+    height: 100vh;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--dark-blue);
+    background-color: var(--almost-white);
+}
+
+ul.on {
+    display: flex;
+}
+
 .nav .logo {
     width: 4.5rem;
     height: 2.8rem;
 }
 
-.nav .nav__list img{
+.nav .nav__list button{
     width: 4rem;
     height: 1.7rem;
+    position: relative;
+    z-index: 5;
+}
+
+.nav .nav__list button#close-btn{
+    width: 3rem;
+    position: relative;
+    bottom: 0.5rem;
+    right: 1rem;
+    z-index: 5;
+}
+
+button.off {
+    display: none;
+}
+
+button.on {
+    display: block;
 }
 
 /* Header */
@@ -199,6 +274,11 @@ header p {
     display: flex;
     gap: 2.4rem;
     max-width: 35rem;
+    transition: 0.3s;
+}
+
+.articles section:hover {
+    transform: scale(1.05);
 }
 
 .articles section picture img{
