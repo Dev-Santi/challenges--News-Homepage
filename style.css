@@ -228,6 +228,7 @@ ul.on {
     height: 2.8rem;
 }
 
+
 .nav .nav__list button{
     width: 4rem;
     height: 1.7rem;
@@ -326,6 +327,9 @@ Medias
 }
 
 @media(min-width: 48rem) {
+    body {
+        max-width: 90rem;
+    }
 
     header {
         display: grid;
