@@ -207,16 +207,6 @@ ul {
     line-height: 2.4rem;
     color: var(--dark-blue);
     background-color: var(--almost-white);
-    animation: menu-in 0.4s linear;
-}
-
-@keyframes menu-in{
-    0% {
-        transform: translateX(100%);
-    }
-    100% {
-        transform: translateX(0);
-    }
 }
 
 ul.on {
