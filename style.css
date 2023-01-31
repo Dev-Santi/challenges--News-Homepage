@@ -371,6 +371,7 @@ Medias
         line-height: 2.6rem;
         background: transparent;
         transform: translateY(2.6rem);
+        animation: none;
     }
 
     a {
