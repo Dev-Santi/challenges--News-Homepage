@@ -416,3 +416,23 @@ Medias
         height: 51.1rem;
     }
 }
+
+.about {
+    border-top: #c5c6ce6b 1px solid;
+    margin-top: 8rem;
+    text-align: center;
+}
+
+.about p {
+    font-size: 14px;
+}
+
+.about a {
+    color: #5e607a;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.about a:hover {
+    color: #F15D51;
+}
