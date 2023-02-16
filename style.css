@@ -159,6 +159,10 @@ img {
     width: 18.5rem;
 }
 
+button {
+    cursor: pointer;
+}
+
 .btn:hover {
     background-color: var(--dark-blue);
 }
@@ -197,7 +201,7 @@ ul {
     padding: 14.4rem 2.4rem;
     flex-direction: column;
     row-gap: 2.4rem;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     width: 68%;
@@ -207,6 +211,16 @@ ul {
     line-height: 2.4rem;
     color: var(--dark-blue);
     background-color: var(--almost-white);
+    transition: 300ms;
+    transform: translateX(100%);
+}
+
+ul.animout {
+    transform: 100%;
+}
+
+ul.anim{
+    transform: translateX(0%);
 }
 
 ul.on {

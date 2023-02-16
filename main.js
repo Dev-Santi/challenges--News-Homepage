@@ -18,6 +18,11 @@ btnOpen.onclick = () => {
     menu.classList.toggle('on')
 
     body.classList.toggle('off')
+
+    setTimeout(() => {
+        menu.classList.toggle('anim')
+    }, 50)
+    
 }
 
 btnClose.onclick = () => {
@@ -31,4 +36,8 @@ btnClose.onclick = () => {
     menu.classList.toggle('on')
 
     body.classList.toggle('off')
+
+    setTimeout(() => {
+        menu.classList.toggle('anim')
+    }, 50)
 }
