@@ -9,7 +9,8 @@ It is a challenge proyect supplied by <a href="https://www.frontendmentor.io/pro
 ## What did I do?
 
 - I used pure CSS and vanilla JS
-- I tried to make it the fastest and cleanest i can
-- I made it responsive, like every page or web aplication i make
+- I made a container to make the filter work
+- I disable scroll when the nav is open in mobile
+- I made it responsive
 
 It was in general an easy layout to practice grid, but it was a challenge to make the mobile-nav work as expected.
