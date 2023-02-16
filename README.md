@@ -12,4 +12,4 @@ It is a challenge proyect supplied by <a href="https://www.frontendmentor.io/pro
 - I tried to make it the fastest and cleanest i can
 - I made it responsive, like every page or web aplication i make
 
-It was an easy layout to practice some grid and flex, It took a little bit of js to make the carrousel.
+It was in general an easy layout to practice grid, but it was a challenge to make the mobile-nav work as expected.
