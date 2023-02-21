@@ -4,7 +4,7 @@
 
 ## About this proyect
 
-A responsive landing page using Flex and Grid, and a little bit of JS.
+A responsive landing page using Flex and Grid, and a little bit of JS.<br>
 It is a challenge proyect supplied by <a href="https://www.frontendmentor.io/profile/SantiNakc">Frontend Mentor</a>
 
 
